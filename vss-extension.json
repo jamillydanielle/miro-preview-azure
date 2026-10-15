@@ -6,27 +6,34 @@
   "publisher": "gooxxy-internal",
   "description": "Preview de boards do Miro dentro dos Work Items.",
   "public": false,
+  "icons": {
+    "default": "miro-icon.png"
+  },
   "targets": [
     {
       "id": "Microsoft.VisualStudio.Services"
     }
   ],
   "categories": [
-  "Azure Boards"
+    "Azure Boards"
   ],
   "scopes": [
     "vso.work"
   ],
   "files": [
-  {
-    "path": "index.html",
-    "addressable": true
-  },
-  {
-    "path": "dist",
-    "addressable": true
-  }
-],
+    {
+      "path": "index.html",
+      "addressable": true
+    },
+    {
+      "path": "dist",
+      "addressable": true
+    },
+    {
+      "path": "miro-icon.png",
+      "addressable": true
+    }
+  ],
   "contributions": [
     {
       "id": "miro-preview-control",
