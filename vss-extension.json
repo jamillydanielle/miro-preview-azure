@@ -1,0 +1,60 @@
+{
+  "manifestVersion": 1,
+  "id": "miro-preview",
+  "name": "Miro Preview",
+  "version": "1.0.1",
+  "publisher": "gooxxy-internal",
+  "description": "Preview de boards do Miro dentro dos Work Items.",
+  "public": false,
+  "targets": [
+    {
+      "id": "Microsoft.VisualStudio.Services"
+    }
+  ],
+  "categories": [
+  "Azure Boards"
+  ],
+  "scopes": [
+    "vso.work"
+  ],
+  "files": [
+  {
+    "path": "index.html",
+    "addressable": true
+  },
+  {
+    "path": "dist",
+    "addressable": true
+  }
+],
+  "contributions": [
+    {
+      "id": "miro-preview-control",
+      "type": "ms.vss-work-web.work-item-form-control",
+      "targets": [
+        "ms.vss-work-web.work-item-form"
+      ],
+      "properties": {
+        "name": "Miro Preview",
+        "uri": "index.html",
+        "height": 500,
+        "inputs": [
+          {
+            "id": "FieldName",
+            "description": "Campo contendo a URL do board Miro",
+            "type": "WorkItemField",
+            "properties": {
+              "workItemFieldTypes": [
+                "String"
+              ]
+            },
+            "validation": {
+              "dataType": "Field",
+              "isRequired": true
+            }
+          }
+        ]
+      }
+    }
+  ]
+}

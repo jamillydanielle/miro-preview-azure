@@ -1,0 +1,19 @@
+{
+  "name": "miro-preview-azure",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "devDependencies": {
+    "esbuild": "^0.28.2"
+  },
+  "dependencies": {
+    "azure-devops-extension-api": "^5.276.0",
+    "azure-devops-extension-sdk": "^4.0.2"
+  }
+}
